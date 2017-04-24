@@ -1,7 +1,23 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: Victorious
- * Date: 2017-04-24
- * Time: 13:58
- */
+<!DOCTYPE>
+
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>View Movies</title>
+
+    </head>
+
+    <body>
+
+
+
+
+
+
+    </body>
+
+</html>
+
+
+
