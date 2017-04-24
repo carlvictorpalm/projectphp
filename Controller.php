@@ -10,7 +10,7 @@ class Controller
 {
     private $model;
 
-    function __construct()
+    function __construct(PDO $db)
     {
         $this->model = new Model();
     }
@@ -22,13 +22,13 @@ class Controller
         $page = filter_input(INPUT_GET, 'page', FILTER_SANITIZE_SPECIAL_CHARS);
 
         if (empty($page))
-            require_once('view/viewMovie.php');
+            require_once('/view/viewMovie.php');
         elseif ($page === "albums") {
-            $albums = $model->getMovies();
+            $movies = $model->getMovie();
             // kolla $albums är en array
-            require_once('view/viewMovies.php');
+            require_once('/view/viewMovies.php');
         } else
-            require_once('templates/start.php');
+            require_once('/Templates/Start.php');
 
     }
 
