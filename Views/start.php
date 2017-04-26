@@ -1,7 +1,13 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Victorious
- * Date: 2017-04-26
- * Time: 09:10
- */
+require (header);
+
+?>
+<h1>Victors Filmsida</h1>
+<p>Lista på mina favoriter</p>
+
+<?php
+
+require (footer);
+
+?>
+

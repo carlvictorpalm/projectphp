@@ -1,3 +1,9 @@
+<?php
+/* $var Model $this */
+
+
+?>
+
 <!DOCTYPE>
 
 <html>

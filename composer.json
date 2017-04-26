@@ -1,0 +1,13 @@
+{
+    "config": {
+      "disable-tls": true
+    },
+    "name": "victorious/projectphp",
+    "authors": [
+        {
+            "name": "carlvictorpalm",
+            "email": "carlvictorpalm@gmail.com"
+        }
+    ],
+    "require": {}
+}

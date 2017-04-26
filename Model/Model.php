@@ -32,7 +32,7 @@ public function createMovie($title, $stars, $director, $year) {
 
 public function updateMovie($title, $stars, $director, $year)
 {
-    $update_stm = $this->prepare("UPDATE 'albums' SET title = :title, stars = :stars, year = :year WHERE id = :id");
+    $update_stm = $this->db->prepare("UPDATE 'albums' SET title = :title, stars = :stars, year = :year WHERE id = :id");
     $update_stm->execute([':title' => $title, ':stars' => $stars, ':director' => $director, ':year' => $year]);
     return $update_stm;
 }
