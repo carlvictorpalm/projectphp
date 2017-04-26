@@ -1,5 +1,5 @@
 <?php
-require (header);
+require ('header.php');
 
 ?>
     <div class="container">
@@ -22,17 +22,9 @@ require (header);
             </div>
         </form>
     </div>
-
+    <br>
 <?php
 
-require (footer);
+require ('footer.php');
 
 ?>
-
-<?php
-/**
- * Created by PhpStorm.
- * User: Victorious
- * Date: 2017-04-26
- * Time: 09:09
- */

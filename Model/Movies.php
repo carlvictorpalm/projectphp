@@ -8,25 +8,52 @@
  */
 class Movies
 {
+    private $id;
+    private $title;
+    private $stars;
+    private $director;
+    private $year;
 
-private $title;
-private $stars;
-private $director;
-private $year;
-
-
-public function __construct( $title, $stars, $director, $year)
+public function __construct( $id, $title, $stars, $director, $year)
 {
-
+    $this->id=$id;
     $this->title=$title;
     $this->stars=$stars;
     $this->director=$director;
     $this->year=$year;
-
-
-
 }
 
+    /**
+     * @return mixed
+     */
+    public function getDirector()
+    {
+        return $this->director;
+    }
+
+    /**
+     * @param mixed $director
+     */
+    public function setDirector($director)
+    {
+        $this->director = $director;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * @param mixed $id
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
+    }
     /**
      * @return mixed
      */
@@ -59,21 +86,6 @@ public function __construct( $title, $stars, $director, $year)
         $this->stars = $stars;
     }
 
-    /**
-     * @return mixed
-     */
-    public function getDirector()
-    {
-        return $this->director;
-    }
-
-    /**
-     * @param mixed $director
-     */
-    public function setDirector($director)
-    {
-        $this->director = $director;
-    }
 
     /**
      * @return mixed
@@ -90,5 +102,4 @@ public function __construct( $title, $stars, $director, $year)
     {
         $this->year = $year;
     }
-
 }

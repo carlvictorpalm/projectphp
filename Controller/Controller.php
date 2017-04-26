@@ -10,24 +10,43 @@ class Controller
     {
         $this->model = new Model($db);
     }
-
     public function index()
     {
-
-
         $page = filter_input(INPUT_GET, 'page', FILTER_SANITIZE_SPECIAL_CHARS);
-
         if (empty($page))
-            require_once('Views/viewMovies.php');
-        elseif ($page === "albums") {
-            $movies = $this->model->getMovie();
-            // kolla $albums är en array
-            require_once('Views/viewMovies.php');
-        } else
+            require('Views/start.php');
+        elseif ($page === "show") {
+            require('Views/viewMovies.php');
+        }
+        elseif ($page === "create"){
+            require ('Views/create.php');
+        }
+        elseif ($page === "update.php"){
+            require ('Views/update.php');
+        }
+        else {
             require_once('Views/start.php');
+        }
 
+
+}
+
+
+
+
+    public function getMovie()
+    {
+        return $this->model->getMovie();
     }
-
+    public function updateMovie($id, $title, $stars, $director, $year){
+        return $this->model->updateMovie($id, $title, $stars, $director, $year);
+    }
+    public function deleteMovie($id){
+        return $this->model->deleteMovie($id);
+    }
+    public function createMovie($title, $stars, $director, $year){
+        return $this->model->createMovie($title, $stars, $director, $year);
+    }
 
 
 }
