@@ -24,7 +24,7 @@ class Controller
             // kolla $albums är en array
             require_once('Views/viewMovies.php');
         } else
-            require_once('Views/Start.php');
+            require_once('Views/start.php');
 
     }
 

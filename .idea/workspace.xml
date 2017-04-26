@@ -2,17 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5fa662df-b1cb-400c-a6a5-2b7c01e5afb4" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/config.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Controller.php" afterPath="$PROJECT_DIR$/Controller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model/Model.php" afterPath="$PROJECT_DIR$/Model/Model.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Views/create.php" afterPath="$PROJECT_DIR$/Views/create.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Views/footer.php" afterPath="$PROJECT_DIR$/Views/footer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Views/header.php" afterPath="$PROJECT_DIR$/Views/header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Views/start.php" afterPath="$PROJECT_DIR$/Views/start.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Views/update.php" afterPath="$PROJECT_DIR$/Views/update.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Views/viewMovies.php" afterPath="$PROJECT_DIR$/Views/viewMovies.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Controller.php" afterPath="$PROJECT_DIR$/Controller/Controller.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/config.php" afterPath="$PROJECT_DIR$/Controller/config.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/database.php" afterPath="$PROJECT_DIR$/Controller/database.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/router.php" afterPath="$PROJECT_DIR$/router.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -35,7 +29,7 @@
         </entry>
       </file>
       <file leaf-file-name="Controller.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Controller.php">
+        <entry file="file://$PROJECT_DIR$/Controller/Controller.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="880">
               <caret line="22" column="39" lean-forward="true" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
@@ -88,7 +82,7 @@
         </entry>
       </file>
       <file leaf-file-name="database.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database.php">
+        <entry file="file://$PROJECT_DIR$/Controller/database.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="200">
               <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
@@ -125,6 +119,7 @@
         <option value="$PROJECT_DIR$/Model/Model.php" />
         <option value="$PROJECT_DIR$/Controller.php" />
         <option value="$PROJECT_DIR$/router.php" />
+        <option value="$PROJECT_DIR$/Controller/router.php" />
       </list>
     </option>
   </component>
@@ -201,6 +196,20 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projectphp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projectphp" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controller" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -209,6 +218,12 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\MAMP\htdocs\projectphp\Controller" />
+      <recent name="C:\MAMP\htdocs\projectphp" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -306,18 +321,17 @@
       <workItem from="1493038922817" duration="2707000" />
       <workItem from="1493041653383" duration="94000" />
       <workItem from="1493189698776" duration="7286000" />
-      <workItem from="1493206080573" duration="2233000" />
+      <workItem from="1493206080573" duration="2669000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13405000" />
+    <option name="totallyTimeSpent" value="13841000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-13" y="-13" width="3226" height="1746" extended-state="7" />
-    <editor active="true" />
+    <frame x="-13" y="-13" width="3226" height="1746" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13078406" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13078406" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975152" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -391,7 +405,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Controller.php">
+    <entry file="file://$PROJECT_DIR$/Controller/Controller.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
           <caret line="17" column="22" lean-forward="false" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
@@ -439,7 +453,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database.php">
+    <entry file="file://$PROJECT_DIR$/Controller/database.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="640">
           <caret line="16" column="1" lean-forward="false" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
@@ -455,7 +469,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Controller.php">
+    <entry file="file://$PROJECT_DIR$/Controller/Controller.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="560">
           <caret line="14" column="30" lean-forward="false" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
@@ -498,7 +512,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Controller.php">
+    <entry file="file://$PROJECT_DIR$/Controller/Controller.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="560">
           <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
@@ -635,7 +649,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database.php">
+    <entry file="file://$PROJECT_DIR$/Controller/database.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
@@ -659,7 +673,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.php">
+    <entry file="file://$PROJECT_DIR$/Controller/config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
           <caret line="8" column="2" lean-forward="true" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
@@ -686,7 +700,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Controller.php">
+    <entry file="file://$PROJECT_DIR$/Controller/Controller.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="880">
           <caret line="22" column="39" lean-forward="true" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />

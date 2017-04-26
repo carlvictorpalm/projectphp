@@ -1,13 +1,13 @@
 <?php
 
 // Sökväg till grundmappen i projektet
-$baseDir = __DIR__ . '/.';
+$baseDir = __DIR__ . '/projectphp';
 
 // Ladda in Composers autoload-fil
 //require $baseDir . '/vendor/autoload.php';
 
 // Ladda konfigurationsdata
-$config = require $baseDir. 'config.php';
+$config = require $baseDir . 'config.php';
 
 // Normalisera url-sökvägar
 $path = function($uri) {
