@@ -1,5 +1,6 @@
 <?php
 /* @var Controller $this */
+require ('header.php');
 ?>
     <h2>Victorious filmtop</h2>
     <table class="table-striped">
@@ -41,5 +42,5 @@
     </table>
 
 <?php
-require('Views/footer.php');
+require('footer.php');
 ?>
