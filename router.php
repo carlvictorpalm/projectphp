@@ -1,7 +1,7 @@
 <?php
 
 // Sökväg till grundmappen i projektet
-$baseDir = __DIR__ . '/.';
+$baseDir = __DIR__ . '.';
 
 // Ladda in Composers autoload-fil
 //require $baseDir . '/vendor/autoload.php';

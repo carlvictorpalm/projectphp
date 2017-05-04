@@ -1,43 +1,8 @@
 <?php
 
-/**
- * Created by PhpStorm.
- * User: Victorious
- * Date: 2017-04-19
- * Time: 13:48
- */
 class Movies
 {
     private $id;
-    private $title;
-    private $stars;
-    private $director;
-    private $year;
-
-public function __construct( $id, $title, $stars, $director, $year)
-{
-    $this->id=$id;
-    $this->title=$title;
-    $this->stars=$stars;
-    $this->director=$director;
-    $this->year=$year;
-}
-
-    /**
-     * @return mixed
-     */
-    public function getDirector()
-    {
-        return $this->director;
-    }
-
-    /**
-     * @param mixed $director
-     */
-    public function setDirector($director)
-    {
-        $this->director = $director;
-    }
 
     /**
      * @return mixed
@@ -54,6 +19,7 @@ public function __construct( $id, $title, $stars, $director, $year)
     {
         $this->id = $id;
     }
+
     /**
      * @return mixed
      */
@@ -86,6 +52,21 @@ public function __construct( $id, $title, $stars, $director, $year)
         $this->stars = $stars;
     }
 
+    /**
+     * @return mixed
+     */
+    public function getDirector()
+    {
+        return $this->director;
+    }
+
+    /**
+     * @param mixed $director
+     */
+    public function setDirector($director)
+    {
+        $this->director = $director;
+    }
 
     /**
      * @return mixed
@@ -102,4 +83,21 @@ public function __construct( $id, $title, $stars, $director, $year)
     {
         $this->year = $year;
     }
+    private $title;
+    private $stars;
+    private $director;
+    private $year;
+
+    public function __construct($arrayMovie = [])
+    {
+        if (isset($arrayMovie['id'])) {
+            $this->id = $arrayMovie['id'];
+            $this->title = @$arrayMovie['title'];
+            $this->stars = @$arrayMovie['stars'];
+            $this->director = @$arrayMovie['director'];
+            $this->year = @$arrayMovie['year'];
+        }
+
+    }
+
 }

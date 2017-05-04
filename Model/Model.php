@@ -14,7 +14,8 @@ public function __construct(PDO $db){
 public function getMovie() {
     $stm_getMovie = $this->db->prepare('SELECT * FROM `movies`');
     $stm_getMovie->execute();
-    return $stm_getMovie;
+    $results = $stm_getMovie->fetchAll(PDO::FETCH_ASSOC);
+    return $results;
 }
 
 public function deleteMovie($id) {

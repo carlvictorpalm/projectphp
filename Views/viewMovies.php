@@ -21,10 +21,10 @@ require ('header.php');
                 <td><?= $row->getYear(); ?></td>
                 <td>
                     <button class="btn btn-default" name="btn-edit" id="edit"><a
-                                href="Views/update.php?edit_id=<?php echo $row->getId(); ?>">Update Movie</a></button>
+                                href="/Views/update.php?edit_id=<?php echo $row->getId(); ?>">Update Movie</a></button>
                 </td>
                 <td>
-                    <form action="index.php" method="post">
+                    <form action="/index.php" method="post">
                         <input type="hidden" name="delete" value="<?php echo $row->getId(); ?>"/>
                         <button type="submit" class="btn btn-default" name="btn-delete">Delete Movie</button>
                     </form>
@@ -34,7 +34,7 @@ require ('header.php');
 
         <tr>
             <th colspan="8" align="right">
-                <button class="btn btn-default" name="btn-create" id="create"><a href="Views/create.php">Create New Movie</a>
+                <button class="btn btn-default" name="btn-create" id="create"><a href="/Views/create.php">Create New Movie</a>
                 </button>
             </th>
         </tr>
