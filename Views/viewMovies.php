@@ -11,33 +11,30 @@ require ('header.php');
             <th>Year</th>
         </tr>
         <?php
-        foreach ($this->getMovie() as $row) {
+
+        foreach ($this->getMovies() as $row) {
             /* @var Movies $row */
             ?>
             <tr>
-                <td><?= $row->getTitle(); ?></td>
-                <td><?= $row->getStars(); ?></td>
-                <td><?= $row->getDirector(); ?></td>
-                <td><?= $row->getYear(); ?></td>
+                <td><?= $row['title']; ?></td>
+                <td><?= $row['stars']; ?></td>
+                <td><?= $row['director']; ?></td>
+                <td><?= $row['year']; ?></td>
                 <td>
                     <button class="btn btn-default" name="btn-edit" id="edit"><a
-                                href="/Views/update.php?edit_id=<?php echo $row->getId(); ?>">Update Movie</a></button>
+                                href="/index.php?edit_id=<?php echo $row['id']; ?>">Update Movie</a></button>
                 </td>
-                <td>
+                 <td>
                     <form action="/index.php" method="post">
-                        <input type="hidden" name="delete" value="<?php echo $row->getId(); ?>"/>
+                        <input type="hidden" name="delete" value="<?php echo $row['id']; ?>"/>
                         <button type="submit" class="btn btn-default" name="btn-delete">Delete Movie</button>
                     </form>
                 </td>
             </tr>
-        <?php } ?>
+        <?php }
 
-        <tr>
-            <th colspan="8" align="right">
-                <button class="btn btn-default" name="btn-create" id="create"><a href="/Views/create.php">Create New Movie</a>
-                </button>
-            </th>
-        </tr>
+        ?>
+
 
     </table>
 

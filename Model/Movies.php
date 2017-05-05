@@ -67,7 +67,6 @@ class Movies
     {
         $this->director = $director;
     }
-
     /**
      * @return mixed
      */
@@ -83,6 +82,7 @@ class Movies
     {
         $this->year = $year;
     }
+
     private $title;
     private $stars;
     private $director;

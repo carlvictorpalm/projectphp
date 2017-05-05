@@ -4,7 +4,6 @@ class Model{
 
 private $db;
 
-
 public function __construct(PDO $db){
 
     $this->db = $db;
@@ -22,7 +21,7 @@ public function deleteMovie($id) {
     $stm_deleteMovie = $this->db->prepare('DELETE `id` FROM `movies` WHERE `id` = :removeid ');
     $stm_deleteMovie->execute([':id' => $id]);
     //$delete_stm->setFetchMode(PDO::FETCH_CLASS, 'Movies');
-    return $stm_deleteMovie->fetch();
+    return $stm_deleteMovie;
 }
 
 public function createMovie($title, $stars, $director, $year) {

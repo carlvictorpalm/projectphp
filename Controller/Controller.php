@@ -1,6 +1,4 @@
 <?php
-/*  */
-
 
 class Controller
 {
@@ -16,25 +14,23 @@ class Controller
         if (empty($page))
             require('Views/start.php');
         elseif ($page === "show") {
+            //$this->getMovie();
             require('Views/viewMovies.php');
         }
         elseif ($page === "create"){
+            //$this->createMovie($title, $stars, $director, $year);
             require ('Views/create.php');
         }
-        elseif ($page === "update.php"){
+        elseif ($page === "update"){
+            //$this->updateMovie($id, $title, $stars, $director, $year);
             require ('Views/update.php');
         }
         else {
-            require_once('Views/start.php');
+            require('Views/start.php');
         }
-
-
 }
 
-
-
-
-    public function getMovie()
+    public function getMovies()
     {
         return $this->model->getMovie();
     }
@@ -47,6 +43,4 @@ class Controller
     public function createMovie($title, $stars, $director, $year){
         return $this->model->createMovie($title, $stars, $director, $year);
     }
-
-
 }
