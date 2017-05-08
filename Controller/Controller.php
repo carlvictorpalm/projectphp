@@ -15,15 +15,18 @@ class Controller
         if (empty($page))
             require('Views/start.php');
         elseif ($page === "show") {
+
             require('Views/viewMovies.php');
         } elseif ($page === "create") {
 
-            require('Views/create.php');
+            require ('Views/create.php');
+
         } elseif ($page === "update") {
 
             $id = $_GET['id'];
-            $this->editMovie($id);
+            $movies = $this->editMovie($id);
             require('Views/update.php');
+            exit();
 
         } elseif ($page === "delete") {
             $id = $_GET['id'];
@@ -41,9 +44,9 @@ class Controller
         return $this->model->getMovie();
     }
 
-    public function updateMovie($id, $title, $stars, $director, $year)
+    public function updateMovie($id)
     {
-        return $this->model->updateMovie($id, $title, $stars, $director, $year);
+        return $this->model->updateMovie($id);
     }
 
     public function deleteMovie($id)

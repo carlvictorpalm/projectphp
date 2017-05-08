@@ -4,7 +4,10 @@ require ('header.php');
 ?>
 <br>
 
-<form action="../index.php?page=create" method="post">
+<form action="../index.php?page=create" >
+    <div>
+        <input type="hidden" name="id">
+    </div>
     <div>
         <label for="title">Title: </label>
         <input type="text" name="title" id="title" placeholder="Title" required>
@@ -22,7 +25,7 @@ require ('header.php');
         <input type="text" name="year" id="year" placeholder="Year" required>
     </div>
     <br>
-    <button type="submit" name="save" id="save">Insert Movie</button>
+    <button type="submit" name="create" id="create">Save Movie</button>
 </form>
 
 <br>

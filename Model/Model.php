@@ -36,7 +36,7 @@ class Model
 
     public function updateMovie($id, $title, $stars, $director, $year)
     {
-        $update_stm = $this->db->prepare("UPDATE 'albums' SET id = :id, title = :title, stars = :stars, year = :year WHERE id = :id");
+        $update_stm = $this->db->prepare("UPDATE 'movies' SET id = :id, title = :title, stars = :stars, year = :year WHERE id = :id");
         $update_stm->execute(['id' => $id, ':title' => $title, ':stars' => $stars, ':director' => $director, ':year' => $year]);
         return $update_stm;
     }
