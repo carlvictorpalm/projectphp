@@ -25,7 +25,7 @@ class Controller
                 $movies = $this->getId($id);
                 require('Views/update.php');
             }
-            elseif (isset($_GET['update'])){
+            if (isset($_GET['update'])){
                 $movies = new Movies();
                 $movies->setId($_GET['id']);
                 $movies->setTitle($_GET['title']);
