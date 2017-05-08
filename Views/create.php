@@ -10,22 +10,22 @@ require ('header.php');
     </div>
     <div>
         <label for="title">Title: </label>
-        <input type="text" name="title" id="title" placeholder="Title" required>
+        <input type="text" name="title">
     </div>
     <div>
-        <label for="title">Stars: </label>
-        <input type="text" name="stars" id="stars" placeholder="Stars" required>
+        <label for="stars">Stars: </label>
+        <input type="text" name="stars">
     </div>
     <div>
-        <label for="altTitle">Director: </label>
-        <input type="text" name="director" id="director" placeholder="Director">
+        <label for="director">Director: </label>
+        <input type="text" name="director">
     </div>
     <div>
         <label for="year">Year: </label>
-        <input type="text" name="year" id="year" placeholder="Year" required>
+        <input type="text" name="year" required>
     </div>
     <br>
-    <button type="submit" name="create" id="create">Save Movie</button>
+    <button type="submit" name="save" >Save Movie</button>
 </form>
 
 <br>

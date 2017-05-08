@@ -27,21 +27,21 @@ class Model
         return $stm_deleteMovie;
     }
 
-    public function createMovie($title, $stars, $director, $year)
+    public function createMovie(Movies $movies)
     {
-        $stm_createMovie = $this->db->prepare('INSERT INTO `movies`( `title`, `stars`, `director`, `year`) VALUES ($title, $stars, $director, $year)');
-        $stm_createMovie->execute([':title' => $title, ':stars' => $stars, ':director' => $director, ':year' => $year]);
+        $stm_createMovie = $this->db->prepare('INSERT INTO `movies`( `title`, `stars`, `director`, `year`) VALUES (:title, :stars, :director, :year)');
+        $stm_createMovie->execute(['id' => $movies->getId(), ':title' => $movies->getTitle(), ':stars' => $movies->getStars(), ':director' => $movies->getDirector(), ':year' => $movies->getYear()]);
         return $stm_createMovie;
     }
 
-    public function updateMovie($id, $title, $stars, $director, $year)
+    public function updateMovie(Movies $movies)
     {
-        $update_stm = $this->db->prepare("UPDATE 'movies' SET id = :id, title = :title, stars = :stars, year = :year WHERE id = :id");
-        $update_stm->execute(['id' => $id, ':title' => $title, ':stars' => $stars, ':director' => $director, ':year' => $year]);
+        $update_stm = $this->db->prepare("UPDATE `movies` SET id = :id, title = :title, stars = :stars, year = :year WHERE id = :id");
+        $update_stm->execute(['id' => $movies->getId(), ':title' => $movies->getTitle(), ':stars' => $movies->getStars(), ':director' => $movies->getDirector(), ':year' => $movies->getYear()]);
         return $update_stm;
     }
 
-    public function editMovie($id)
+    public function editMovieById($id)
     {
         $stm_editMovie = $this->db->prepare('SELECT * FROM `movies` WHERE `id` = :id');
         $stm_editMovie->execute([':id' => $id]);

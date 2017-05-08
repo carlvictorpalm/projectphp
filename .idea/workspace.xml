@@ -6,7 +6,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Controller/Controller.php" afterPath="$PROJECT_DIR$/Controller/Controller.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model/Model.php" afterPath="$PROJECT_DIR$/Model/Model.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Views/create.php" afterPath="$PROJECT_DIR$/Views/create.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Views/update.php" afterPath="$PROJECT_DIR$/Views/update.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -33,37 +32,32 @@
       <file leaf-file-name="Controller.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Controller/Controller.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1045">
-              <caret line="36" column="16" lean-forward="true" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
+            <state relative-caret-position="606">
+              <caret line="56" column="33" lean-forward="true" selection-start-line="56" selection-start-column="33" selection-end-line="56" selection-end-column="33" />
               <folding>
                 <element signature="n#__construct#0;n#Controller#0;n#!!top" expanded="false" />
-                <element signature="n#getMovies#0;n#Controller#0;n#!!top" expanded="false" />
-                <element signature="n#updateMovie#0;n#Controller#0;n#!!top" expanded="false" />
                 <element signature="n#deleteMovie#0;n#Controller#0;n#!!top" expanded="false" />
-                <element signature="n#createMovie#0;n#Controller#0;n#!!top" expanded="false" />
-                <element signature="n#editMovie#0;n#Controller#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Model.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Model.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Model/Model.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="760">
+            <state relative-caret-position="1097">
               <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
               <folding>
                 <element signature="n#__construct#0;n#Model#0;n#!!top" expanded="false" />
                 <element signature="n#getMovie#0;n#Model#0;n#!!top" expanded="false" />
                 <element signature="n#deleteMovie#0;n#Model#0;n#!!top" expanded="false" />
-                <element signature="n#createMovie#0;n#Model#0;n#!!top" expanded="false" />
-                <element signature="n#updateMovie#0;n#Model#0;n#!!top" expanded="false" />
-                <element signature="n#editMovie#0;n#Model#0;n#!!top" expanded="false" />
-                <marker date="1494233602206" expanded="true" signature="202:215" ph="SELECT * FRO... " />
-                <marker date="1494233602206" expanded="true" signature="202:224" ph="SELECT * FRO... movies" />
-                <marker date="1494233602206" expanded="true" signature="446:483" ph="DELETE FROM " />
-                <marker date="1494233602206" expanded="true" signature="698:799" ph="INSERT INTO `movies`... " />
-                <marker date="1494233602206" expanded="true" signature="1426:1465" ph="SELECT * FRO... movies" />
+                <element signature="n#editMovieById#0;n#Model#0;n#!!top" expanded="false" />
+                <marker date="1494251549105" expanded="true" signature="202:215" ph="SELECT * FRO... " />
+                <marker date="1494251549105" expanded="true" signature="202:224" ph="SELECT * FRO... movies" />
+                <marker date="1494251549105" expanded="true" signature="446:483" ph="DELETE FROM " />
+                <marker date="1494251549105" expanded="true" signature="680:781" ph="INSERT INTO `movies`... " />
+                <marker date="1494251549105" expanded="true" signature="1120:1209" ph="UPDATE `movi... " />
+                <marker date="1494251549105" expanded="true" signature="1532:1571" ph="SELECT * FRO... movies" />
               </folding>
             </state>
           </provider>
@@ -72,22 +66,53 @@
       <file leaf-file-name="update.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Views/update.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="7" column="8" lean-forward="false" selection-start-line="7" selection-start-column="8" selection-end-line="9" selection-end-column="14" />
+            <state relative-caret-position="1160">
+              <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
               <folding>
-                <marker date="1494238372718" expanded="true" signature="581:605" ph="..." />
-                <marker date="1494238372718" expanded="true" signature="771:795" ph="..." />
+                <marker date="1494250362635" expanded="true" signature="581:605" ph="..." />
+                <marker date="1494250362635" expanded="true" signature="771:795" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="create.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Views/create.php">
+      <file leaf-file-name="viewMovies.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Views/viewMovies.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="445">
-              <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+            <state relative-caret-position="267">
+              <caret line="9" column="29" lean-forward="true" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Movies.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Model/Movies.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1520">
+              <caret line="65" column="20" lean-forward="false" selection-start-line="65" selection-start-column="20" selection-end-line="65" selection-end-column="20" />
+              <folding>
+                <element signature="e#487#519#0#PHP" expanded="false" />
+                <element signature="n#getId#0;n#Movies#0;n#!!top" expanded="false" />
+                <element signature="e#591#626#0#PHP" expanded="false" />
+                <element signature="n#setId#0;n#Movies#0;n#!!top" expanded="false" />
+                <element signature="e#700#732#0#PHP" expanded="false" />
+                <element signature="n#getTitle#0;n#Movies#0;n#!!top" expanded="false" />
+                <element signature="e#810#848#0#PHP" expanded="false" />
+                <element signature="n#setTitle#0;n#Movies#0;n#!!top" expanded="false" />
+                <element signature="e#934#966#0#PHP" expanded="false" />
+                <element signature="n#getStars#0;n#Movies#0;n#!!top" expanded="false" />
+                <element signature="e#1044#1082#0#PHP" expanded="false" />
+                <element signature="n#setStars#0;n#Movies#0;n#!!top" expanded="false" />
+                <element signature="e#1168#1200#0#PHP" expanded="false" />
+                <element signature="n#getDirector#0;n#Movies#0;n#!!top" expanded="false" />
+                <element signature="e#1284#1325#0#PHP" expanded="false" />
+                <element signature="n#setDirector#0;n#Movies#0;n#!!top" expanded="false" />
+                <element signature="e#1423#1455#0#PHP" expanded="false" />
+                <element signature="n#getYear#0;n#Movies#0;n#!!top" expanded="false" />
+                <element signature="e#1531#1568#0#PHP" expanded="false" />
+                <element signature="n#setYear#0;n#Movies#0;n#!!top" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -131,10 +156,10 @@
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/Views/header.php" />
         <option value="$PROJECT_DIR$/Views/viewMovies.php" />
+        <option value="$PROJECT_DIR$/Views/create.php" />
+        <option value="$PROJECT_DIR$/Views/update.php" />
         <option value="$PROJECT_DIR$/Model/Model.php" />
         <option value="$PROJECT_DIR$/Controller/Controller.php" />
-        <option value="$PROJECT_DIR$/Views/update.php" />
-        <option value="$PROJECT_DIR$/Views/create.php" />
       </list>
     </option>
   </component>
@@ -206,20 +231,6 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Model" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="projectphp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="projectphp" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="Controller" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -231,7 +242,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Music" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="SearchEverywhereHistoryKey" value="viewm&#9;FILE&#9;file://C:/MAMP/htdocs/projectphp/Views/viewMovies.php" />
@@ -257,7 +268,10 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JavaScript Debug.Controller.php">
+    <configuration default="false" name="Controller.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/projectphp/Controller/Controller.php">
+      <method />
+    </configuration>
     <configuration default="true" type="CodeceptionConfigurationType" factoryName="Codeception">
       <PhpTestRunnerSettings />
       <method />
@@ -325,6 +339,14 @@
       <recursive>false</recursive>
       <method />
     </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.Controller.php" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.Controller.php" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -346,12 +368,12 @@
       <workItem from="1493726955072" duration="4843000" />
       <workItem from="1493878922955" duration="19980000" />
       <workItem from="1494231366747" duration="2388000" />
-      <workItem from="1494233790636" duration="3833000" />
+      <workItem from="1494233790636" duration="12607000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51740000" />
+    <option name="totallyTimeSpent" value="60514000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -366,22 +388,22 @@
     <frame x="-14" y="-14" width="3228" height="1738" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13665594" sideWeight="0.49726775" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.120257236" sideWeight="0.49726775" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329235" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32665744" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13311897" sideWeight="0.5027322" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39986187" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32855192" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -484,11 +506,7 @@
           <caret line="16" column="39" lean-forward="true" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
           <folding>
             <element signature="n#__construct#0;n#Controller#0;n#!!top" expanded="false" />
-            <element signature="n#getMovies#0;n#Controller#0;n#!!top" expanded="false" />
-            <element signature="n#updateMovie#0;n#Controller#0;n#!!top" expanded="false" />
             <element signature="n#deleteMovie#0;n#Controller#0;n#!!top" expanded="false" />
-            <element signature="n#createMovie#0;n#Controller#0;n#!!top" expanded="false" />
-            <element signature="n#editMovie#0;n#Controller#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -517,11 +535,7 @@
           <caret line="17" column="22" lean-forward="false" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
           <folding>
             <element signature="n#__construct#0;n#Controller#0;n#!!top" expanded="false" />
-            <element signature="n#getMovies#0;n#Controller#0;n#!!top" expanded="false" />
-            <element signature="n#updateMovie#0;n#Controller#0;n#!!top" expanded="false" />
             <element signature="n#deleteMovie#0;n#Controller#0;n#!!top" expanded="false" />
-            <element signature="n#createMovie#0;n#Controller#0;n#!!top" expanded="false" />
-            <element signature="n#editMovie#0;n#Controller#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -539,8 +553,8 @@
         <state relative-caret-position="1240">
           <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding>
-            <marker date="1494238372718" expanded="true" signature="581:605" ph="..." />
-            <marker date="1494238372718" expanded="true" signature="771:795" ph="..." />
+            <marker date="1494250362635" expanded="true" signature="581:605" ph="..." />
+            <marker date="1494250362635" expanded="true" signature="771:795" ph="..." />
           </folding>
         </state>
       </provider>
@@ -590,11 +604,7 @@
           <caret line="14" column="30" lean-forward="false" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
           <folding>
             <element signature="n#__construct#0;n#Controller#0;n#!!top" expanded="false" />
-            <element signature="n#getMovies#0;n#Controller#0;n#!!top" expanded="false" />
-            <element signature="n#updateMovie#0;n#Controller#0;n#!!top" expanded="false" />
             <element signature="n#deleteMovie#0;n#Controller#0;n#!!top" expanded="false" />
-            <element signature="n#createMovie#0;n#Controller#0;n#!!top" expanded="false" />
-            <element signature="n#editMovie#0;n#Controller#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -607,14 +617,13 @@
             <element signature="n#__construct#0;n#Model#0;n#!!top" expanded="false" />
             <element signature="n#getMovie#0;n#Model#0;n#!!top" expanded="false" />
             <element signature="n#deleteMovie#0;n#Model#0;n#!!top" expanded="false" />
-            <element signature="n#createMovie#0;n#Model#0;n#!!top" expanded="false" />
-            <element signature="n#updateMovie#0;n#Model#0;n#!!top" expanded="false" />
-            <element signature="n#editMovie#0;n#Model#0;n#!!top" expanded="false" />
-            <marker date="1494233602206" expanded="true" signature="202:215" ph="SELECT * FRO... " />
-            <marker date="1494233602206" expanded="true" signature="202:224" ph="SELECT * FRO... movies" />
-            <marker date="1494233602206" expanded="true" signature="446:483" ph="DELETE FROM " />
-            <marker date="1494233602206" expanded="true" signature="698:799" ph="INSERT INTO `movies`... " />
-            <marker date="1494233602206" expanded="true" signature="1426:1465" ph="SELECT * FRO... movies" />
+            <element signature="n#editMovieById#0;n#Model#0;n#!!top" expanded="false" />
+            <marker date="1494251549105" expanded="true" signature="202:215" ph="SELECT * FRO... " />
+            <marker date="1494251549105" expanded="true" signature="202:224" ph="SELECT * FRO... movies" />
+            <marker date="1494251549105" expanded="true" signature="446:483" ph="DELETE FROM " />
+            <marker date="1494251549105" expanded="true" signature="680:781" ph="INSERT INTO `movies`... " />
+            <marker date="1494251549105" expanded="true" signature="1120:1209" ph="UPDATE `movi... " />
+            <marker date="1494251549105" expanded="true" signature="1532:1571" ph="SELECT * FRO... movies" />
           </folding>
         </state>
       </provider>
@@ -649,11 +658,7 @@
           <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
           <folding>
             <element signature="n#__construct#0;n#Controller#0;n#!!top" expanded="false" />
-            <element signature="n#getMovies#0;n#Controller#0;n#!!top" expanded="false" />
-            <element signature="n#updateMovie#0;n#Controller#0;n#!!top" expanded="false" />
             <element signature="n#deleteMovie#0;n#Controller#0;n#!!top" expanded="false" />
-            <element signature="n#createMovie#0;n#Controller#0;n#!!top" expanded="false" />
-            <element signature="n#editMovie#0;n#Controller#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -666,14 +671,13 @@
             <element signature="n#__construct#0;n#Model#0;n#!!top" expanded="false" />
             <element signature="n#getMovie#0;n#Model#0;n#!!top" expanded="false" />
             <element signature="n#deleteMovie#0;n#Model#0;n#!!top" expanded="false" />
-            <element signature="n#createMovie#0;n#Model#0;n#!!top" expanded="false" />
-            <element signature="n#updateMovie#0;n#Model#0;n#!!top" expanded="false" />
-            <element signature="n#editMovie#0;n#Model#0;n#!!top" expanded="false" />
-            <marker date="1494233602206" expanded="true" signature="202:215" ph="SELECT * FRO... " />
-            <marker date="1494233602206" expanded="true" signature="202:224" ph="SELECT * FRO... movies" />
-            <marker date="1494233602206" expanded="true" signature="446:483" ph="DELETE FROM " />
-            <marker date="1494233602206" expanded="true" signature="698:799" ph="INSERT INTO `movies`... " />
-            <marker date="1494233602206" expanded="true" signature="1426:1465" ph="SELECT * FRO... movies" />
+            <element signature="n#editMovieById#0;n#Model#0;n#!!top" expanded="false" />
+            <marker date="1494251549105" expanded="true" signature="202:215" ph="SELECT * FRO... " />
+            <marker date="1494251549105" expanded="true" signature="202:224" ph="SELECT * FRO... movies" />
+            <marker date="1494251549105" expanded="true" signature="446:483" ph="DELETE FROM " />
+            <marker date="1494251549105" expanded="true" signature="680:781" ph="INSERT INTO `movies`... " />
+            <marker date="1494251549105" expanded="true" signature="1120:1209" ph="UPDATE `movi... " />
+            <marker date="1494251549105" expanded="true" signature="1532:1571" ph="SELECT * FRO... movies" />
           </folding>
         </state>
       </provider>
@@ -815,18 +819,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Views/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="9" column="34" lean-forward="false" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/create.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="12" column="39" lean-forward="false" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Views/viewMovies.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="15" column="34" lean-forward="true" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+        <state relative-caret-position="267">
+          <caret line="9" column="29" lean-forward="true" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Model/Movies.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state relative-caret-position="1520">
+          <caret line="65" column="20" lean-forward="false" selection-start-line="65" selection-start-column="20" selection-end-line="65" selection-end-column="20" />
           <folding>
             <element signature="e#487#519#0#PHP" expanded="false" />
             <element signature="n#getId#0;n#Movies#0;n#!!top" expanded="false" />
@@ -852,65 +872,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Controller/Controller.php">
+    <entry file="file://$PROJECT_DIR$/Views/update.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1045">
-          <caret line="36" column="16" lean-forward="true" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
+        <state relative-caret-position="1160">
+          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding>
-            <element signature="n#__construct#0;n#Controller#0;n#!!top" expanded="false" />
-            <element signature="n#getMovies#0;n#Controller#0;n#!!top" expanded="false" />
-            <element signature="n#updateMovie#0;n#Controller#0;n#!!top" expanded="false" />
-            <element signature="n#deleteMovie#0;n#Controller#0;n#!!top" expanded="false" />
-            <element signature="n#createMovie#0;n#Controller#0;n#!!top" expanded="false" />
-            <element signature="n#editMovie#0;n#Controller#0;n#!!top" expanded="false" />
+            <marker date="1494250362635" expanded="true" signature="581:605" ph="..." />
+            <marker date="1494250362635" expanded="true" signature="771:795" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Views/header.php">
+    <entry file="file://$PROJECT_DIR$/Controller/Controller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="9" column="34" lean-forward="false" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
-          <folding />
+        <state relative-caret-position="606">
+          <caret line="56" column="33" lean-forward="true" selection-start-line="56" selection-start-column="33" selection-end-line="56" selection-end-column="33" />
+          <folding>
+            <element signature="n#__construct#0;n#Controller#0;n#!!top" expanded="false" />
+            <element signature="n#deleteMovie#0;n#Controller#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Model/Model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
+        <state relative-caret-position="1097">
           <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
           <folding>
             <element signature="n#__construct#0;n#Model#0;n#!!top" expanded="false" />
             <element signature="n#getMovie#0;n#Model#0;n#!!top" expanded="false" />
             <element signature="n#deleteMovie#0;n#Model#0;n#!!top" expanded="false" />
-            <element signature="n#createMovie#0;n#Model#0;n#!!top" expanded="false" />
-            <element signature="n#updateMovie#0;n#Model#0;n#!!top" expanded="false" />
-            <element signature="n#editMovie#0;n#Model#0;n#!!top" expanded="false" />
-            <marker date="1494233602206" expanded="true" signature="202:215" ph="SELECT * FRO... " />
-            <marker date="1494233602206" expanded="true" signature="202:224" ph="SELECT * FRO... movies" />
-            <marker date="1494233602206" expanded="true" signature="446:483" ph="DELETE FROM " />
-            <marker date="1494233602206" expanded="true" signature="698:799" ph="INSERT INTO `movies`... " />
-            <marker date="1494233602206" expanded="true" signature="1426:1465" ph="SELECT * FRO... movies" />
+            <element signature="n#editMovieById#0;n#Model#0;n#!!top" expanded="false" />
+            <marker date="1494251549105" expanded="true" signature="202:215" ph="SELECT * FRO... " />
+            <marker date="1494251549105" expanded="true" signature="202:224" ph="SELECT * FRO... movies" />
+            <marker date="1494251549105" expanded="true" signature="446:483" ph="DELETE FROM " />
+            <marker date="1494251549105" expanded="true" signature="680:781" ph="INSERT INTO `movies`... " />
+            <marker date="1494251549105" expanded="true" signature="1120:1209" ph="UPDATE `movi... " />
+            <marker date="1494251549105" expanded="true" signature="1532:1571" ph="SELECT * FRO... movies" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Views/update.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="7" column="8" lean-forward="false" selection-start-line="7" selection-start-column="8" selection-end-line="9" selection-end-column="14" />
-          <folding>
-            <marker date="1494238372718" expanded="true" signature="581:605" ph="..." />
-            <marker date="1494238372718" expanded="true" signature="771:795" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Views/create.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
