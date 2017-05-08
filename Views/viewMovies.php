@@ -1,6 +1,6 @@
 <?php
 /* @var Controller $this */
-require ('header.php');
+require('header.php');
 ?>
     <h2>Victorious filmtop</h2>
     <table class="table-striped">
@@ -21,19 +21,15 @@ require ('header.php');
                 <td><?= $row['director']; ?></td>
                 <td><?= $row['year']; ?></td>
                 <td>
-                    <button class="btn btn-default" name="btn-edit" id="edit"><a
-                                href="/index.php?edit_id=<?php echo $row['id']; ?>">Update Movie</a></button>
+                    <button class="btn btn-default" id="edit"><a
+                                href="/index.php?page=update&id=<?php echo $row['id']; ?>">Update Movie</a></button>
                 </td>
-                 <td>
-                    <form action="/index.php" method="post">
-                        <input type="hidden" name="delete" value="<?php echo $row['id']; ?>"/>
-                        <button type="submit" class="btn btn-default" name="btn-delete">Delete Movie</button>
-                    </form>
+                <td>
+                    <button class="btn btn-default" id="delete"><a
+                                href="/index.php?page=delete&id=<?php echo $row['id']; ?>">Delete Movie</a></button>
                 </td>
             </tr>
-        <?php }
-
-        ?>
+        <?php } ?>
 
 
     </table>

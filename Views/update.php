@@ -1,33 +1,31 @@
 <?php
 require ('header.php');
-
+/* @var Movies $movies */
 ?>
-    <div class="container">
-        <form action="update.php" method="post">
+    <br>
 
-            <div class="form-group">
-                <label for="title">Title: </label>
-                <input type="text" name="title" class="form-control" id="title"
-                       value="<?php echo $arrayMovie->getTitle(); ?>" required>
-            </div>
-            <div class="form-group">
-                <label for="altTitle">Stars: </label>
-                <input type="text" name="stars" class="form-control" id="stars" placeholder="Stars"
-                       value="<?php echo $arrayMovie->getStars(); ?>">
-            </div>
-            <div class="form-group">
-                <label for="altTitle">Director: </label>
-                <input type="text" name="director" class="form-control" id="director" placeholder="Director"
-                       value="<?php echo $arrayMovie->getDirector(); ?>">
-            </div>
-            <div class="form-group">
-                <label for="year">Year: </label>
-                <input type="text" name="year" class="form-control" id="year" value="<?php echo $arrayMovie->getYear(); ?>"
-                       required>
-            </div>
-            <button type="submit" class="btn btn-default" name="btn-update">Update</button>
-        </form>
-    </div>
+    <form action="../index.php?page=update" method="post">
+        <div>
+            <label for="title">Title: </label>
+            <input type="text" name="title" id="title" value="<?php echo $movies['title']; ?>" required>
+        </div>
+        <div>
+            <label for="title">Stars: </label>
+            <input type="text" name="stars" id="stars" value="<?php echo $movies['stars']; ?>">
+        </div>
+        <div>
+            <label for="altTitle">Director: </label>
+            <input type="text" name="director" id="director" value="<?php echo $movies['director']; ?>">
+        </div>
+        <div>
+            <label for="year">Year: </label>
+            <input type="text" name="year" id="year" value="<?php echo $movies['year']; ?>" required>
+        </div>
+        <br>
+        <button type="submit" name="save" id="save">Insert Movie</button>
+    </form>
+
+    <br>
     <br>
 <?php
 

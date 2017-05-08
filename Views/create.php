@@ -3,25 +3,26 @@ require ('header.php');
 
 ?>
 <br>
+
 <form action="../index.php?page=create" method="post">
-    <div class="form-group">
+    <div>
         <label for="title">Title: </label>
-        <input type="text" name="title" class="form-control" id="title" placeholder="Title" required>
+        <input type="text" name="title" id="title" placeholder="Title" required>
     </div>
-    <div class="form-group">
+    <div>
         <label for="title">Stars: </label>
-        <input type="text" name="stars" class="form-control" id="stars" placeholder="Stars" required>
+        <input type="text" name="stars" id="stars" placeholder="Stars" required>
     </div>
-    <div class="form-group">
+    <div>
         <label for="altTitle">Director: </label>
-        <input type="text" name="director" class="form-control" id="director" placeholder="Director">
+        <input type="text" name="director" id="director" placeholder="Director">
     </div>
-    <div class="form-group">
+    <div>
         <label for="year">Year: </label>
-        <input type="text" name="year" class="form-control" id="year" placeholder="Year" required>
+        <input type="text" name="year" id="year" placeholder="Year" required>
     </div>
     <br>
-    <button type="submit" class="btn btn-default" name="insert" id="insert">Insert Movie</button>
+    <button type="submit" name="save" id="save">Insert Movie</button>
 </form>
 
 <br>

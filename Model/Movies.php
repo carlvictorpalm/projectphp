@@ -3,6 +3,22 @@
 class Movies
 {
     private $id;
+    private $title;
+    private $stars;
+    private $director;
+    private $year;
+
+    public function __construct($arrayMovie = [])
+    {
+        if (isset($arrayMovie['id'])) {
+            $this->id = $arrayMovie['id'];
+            $this->title = @$arrayMovie['title'];
+            $this->stars = @$arrayMovie['stars'];
+            $this->director = @$arrayMovie['director'];
+            $this->year = @$arrayMovie['year'];
+        }
+
+    }
 
     /**
      * @return mixed
@@ -67,6 +83,7 @@ class Movies
     {
         $this->director = $director;
     }
+
     /**
      * @return mixed
      */
@@ -81,23 +98,6 @@ class Movies
     public function setYear($year)
     {
         $this->year = $year;
-    }
-
-    private $title;
-    private $stars;
-    private $director;
-    private $year;
-
-    public function __construct($arrayMovie = [])
-    {
-        if (isset($arrayMovie['id'])) {
-            $this->id = $arrayMovie['id'];
-            $this->title = @$arrayMovie['title'];
-            $this->stars = @$arrayMovie['stars'];
-            $this->director = @$arrayMovie['director'];
-            $this->year = @$arrayMovie['year'];
-        }
-
     }
 
 }
