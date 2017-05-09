@@ -29,9 +29,12 @@ class Model
 
     public function createMovie(Movies $movies)
     {
-        $stm_createMovie = $this->db->prepare('INSERT INTO `movies`( `title`, `stars`, `director`, `year`) VALUES (:title, :stars, :director, :year)');
-        $stm_createMovie->execute(['id' => $movies->getId(), ':title' => $movies->getTitle(), ':stars' => $movies->getStars(), ':director' => $movies->getDirector(), ':year' => $movies->getYear()]);
-        return $stm_createMovie;
+        $stm_createMovie = $this->db->prepare('INSERT INTO `movies`(`title`, `stars`, `director`, `year`) VALUES (:title, :stars, :director, :year)');
+        $success = $stm_createMovie->execute([':title' => $movies->getTitle(), ':stars' => $movies->getStars(), ':director' => $movies->getDirector(), ':year' => $movies->getYear()]);
+        if ($success) {
+            $movies->setId($this->db->lastInsertId());
+        }
+        return $success;
     }
 
     public function updateMovies(Movies $movies)

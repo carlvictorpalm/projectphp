@@ -4,7 +4,7 @@ require ('header.php');
 ?>
 <br>
 
-<form action="../index.php?page=create" >
+<form action="../index.php?page=create" method="post" >
     <div>
         <input type="hidden" name="id">
     </div>

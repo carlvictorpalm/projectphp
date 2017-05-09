@@ -17,15 +17,17 @@ class Controller
         elseif ($page === "show") {
             require('Views/viewMovies.php');
         } elseif ($page === "create") {
-            /*if (isset($_POST['save'])) {
+
+            if (isset($_POST['save'])) {
                 $movies = new Movies();
                 $movies->setTitle($_POST['title']);
                 $movies->setStars($_POST['stars']);
                 $movies->setDirector($_POST['director']);
                 $movies->setYear($_POST['year']);
                 $success = $this->saveMovie($movies);
+                header ('Location: /index.php?page=show');
                 exit();
-            }*/
+            }
 
             require('Views/create.php');
         } elseif ($page === "update") {
@@ -42,9 +44,8 @@ class Controller
                 $movies->setDirector($_POST['director']);
                 $movies->setYear($_POST['year']);
                 $update_success = $this->editMovie($movies);
-                echo "här är jag";
-
                 header ('Location: /index.php?page=show');
+                exit();
             }
 
         } elseif ($page === "delete") {
@@ -82,5 +83,7 @@ class Controller
     {
         return $this->model->editMovieById($id);
     }
+
+
 
 }
