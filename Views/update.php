@@ -4,7 +4,7 @@ require ('header.php');
 ?>
     <br>
 
-    <form action="../index.php?page=update">
+    <form action="../index.php?page=update" method="post">
         <div>
             <input type="hidden" name="id" value="<?= $movies->getId() ?>">
         </div>
@@ -25,7 +25,7 @@ require ('header.php');
             <input type="text" name="year" id="year" value="<?php echo $movies->getYear(); ?>">
         </div>
         <br>
-        <button type="submit" name="update" id="update">Update Movie</button>
+        <button type="submit" name="update" id="update">Update</button>
     </form>
 
     <br>

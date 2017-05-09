@@ -25,7 +25,7 @@ require ('header.php');
         <input type="text" name="year" required>
     </div>
     <br>
-    <button type="submit" name="save" >Save Movie</button>
+    <button type="submit" name="save" id="save" >Save Movie</button>
 </form>
 
 <br>

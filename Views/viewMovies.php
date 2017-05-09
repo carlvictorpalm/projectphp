@@ -22,11 +22,11 @@ require('header.php');
                 <td><?= $row['year']; ?></td>
                 <td>
                     <button class="btn btn-default" id="edit"><a
-                                href="/index.php?page=update&id=<?php echo $row['id']; ?>">Update Movie</a></button>
+                                href="/index.php?page=update&id=<?php echo $row['id']; ?>">Update</a></button>
                 </td>
                 <td>
                     <button class="btn btn-default" id="delete"><a
-                                href="/index.php?page=delete&id=<?php echo $row['id']; ?>">Delete Movie</a></button>
+                                href="/index.php?page=delete&id=<?php echo $row['id']; ?>">Delete</a></button>
                 </td>
             </tr>
         <?php } ?>

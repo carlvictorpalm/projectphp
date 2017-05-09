@@ -17,6 +17,15 @@ class Controller
         elseif ($page === "show") {
             require('Views/viewMovies.php');
         } elseif ($page === "create") {
+            /*if (isset($_POST['save'])) {
+                $movies = new Movies();
+                $movies->setTitle($_POST['title']);
+                $movies->setStars($_POST['stars']);
+                $movies->setDirector($_POST['director']);
+                $movies->setYear($_POST['year']);
+                $success = $this->saveMovie($movies);
+                exit();
+            }*/
 
             require('Views/create.php');
         } elseif ($page === "update") {
@@ -25,15 +34,17 @@ class Controller
                 $movies = $this->getId($id);
                 require('Views/update.php');
             }
-            if (isset($_GET['update'])){
+            if (isset($_POST['update'])){
                 $movies = new Movies();
-                $movies->setId($_GET['id']);
-                $movies->setTitle($_GET['title']);
-                $movies->setStars($_GET['stars']);
-                $movies->setDirector($_GET['director']);
-                $movies->setYear($_GET['year']);
+                $movies->setId($_POST['id']);
+                $movies->setTitle($_POST['title']);
+                $movies->setStars($_POST['stars']);
+                $movies->setDirector($_POST['director']);
+                $movies->setYear($_POST['year']);
                 $update_success = $this->editMovie($movies);
-                require ('Views/viewMovies.php');
+                echo "här är jag";
+
+                header ('Location: /index.php?page=show');
             }
 
         } elseif ($page === "delete") {
@@ -54,7 +65,7 @@ class Controller
 
     public function editMovie(Movies $movies)
     {
-        return $this->model->updateMovie($movies);
+        return $this->model->updateMovies($movies);
     }
 
     public function deleteMovie($id)
@@ -62,7 +73,7 @@ class Controller
         return $this->model->deleteMovie($id);
     }
 
-    public function createMovie(Movies $movies)
+    public function saveMovie(Movies $movies)
     {
         return $this->model->createMovie($movies);
     }
@@ -71,4 +82,5 @@ class Controller
     {
         return $this->model->editMovieById($id);
     }
+
 }

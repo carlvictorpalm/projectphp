@@ -34,11 +34,10 @@ class Model
         return $stm_createMovie;
     }
 
-    public function updateMovie(Movies $movies)
+    public function updateMovies(Movies $movies)
     {
-        $update_stm = $this->db->prepare("UPDATE `movies` SET title = :title, stars = :stars, director = :director year = :year WHERE id = :id");
-        $update_stm->execute(['id' => $movies->getId(), ':title' => $movies->getTitle(), ':stars' => $movies->getStars(), ':director' => $movies->getDirector(), ':year' => $movies->getYear()]);
-        return $update_stm;
+        $update_stm = $this->db->prepare('UPDATE `movies` SET title = :title, stars = :stars, director = :director, year = :year WHERE id = :id');
+        return $update_stm->execute([':id' => $movies->getId(), ':title' => $movies->getTitle(), ':stars' => $movies->getStars(),':director' => $movies->getDirector(), ':year' => $movies->getYear()]);
     }
 
     public function editMovieById($id)
