@@ -2,7 +2,7 @@
 /* @var Controller $this */
 require('header.php');
 ?>
-    <h2>Victorious filmtop</h2>
+    <h2>Victorious favorite movies</h2>
     <table class="table-striped">
         <tr>
             <th>Title</th>

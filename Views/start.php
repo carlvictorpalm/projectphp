@@ -1,8 +1,8 @@
 <?php
 require ('header.php');
 ?>
-<h1>Victors Filmsida</h1>
-<p>Sida för mina favoritfilmer</p>
+<h1>Victors movie site</h1>
+<p>A project in MVC</p>
 
 <div>
     <img src="/custom/img/marvel.jpg" alt="">

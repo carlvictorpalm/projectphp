@@ -4,7 +4,7 @@ require ('header.php');
 ?>
 <br>
 <div class="col-lg-12 col-md-12 col-sm-12">
-<form action="../index.php?page=create" method="post" class="col-lg-12" >
+<form action="../index.php?page=create" method="post">
     <div class="form-group">
         <input type="hidden" name="id">
     </div>
