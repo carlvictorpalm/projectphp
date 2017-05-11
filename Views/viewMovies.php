@@ -9,6 +9,7 @@ require('header.php');
             <th>Stars</th>
             <th>Director</th>
             <th>Year</th>
+
         </tr>
         <?php
 
