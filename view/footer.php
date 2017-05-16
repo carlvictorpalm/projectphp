@@ -12,7 +12,7 @@
     <br>
     <hr>
 
-    <p>&copy; 2017 Victorious</p>
+    <p>&copy; 2017 Victor Palm</p>
 </footer>
 
 </body>
