@@ -3,7 +3,11 @@
 <head>
     <title>Victors Filmsida</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="/custom/css/custom.css">
+    <link rel="stylesheet/less" type="text/css" href="/custom/less/styles.less" />
+    <script type="text/javascript" src="/custom/js/less.js"></script>
+    <script type="text/javascript" src="/custom/js/script.js"></script>
+    <!--<link rel="stylesheet" type="text/css" href="/custom/css/custom.css">-->
+
 
 </head>
 <body>

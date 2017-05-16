@@ -14,6 +14,6 @@
 
     <p>&copy; 2017 Victorious</p>
 </footer>
-<script type="text/javascript" src="/custom/js/script.js"></script>
+
 </body>
 </html>
