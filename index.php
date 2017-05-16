@@ -1,11 +1,11 @@
 <?php
 
-require('Controller/Controller.php');
-require('Model/Model.php');
-require('Model/Movies.php');
-require('Controller/database.php');
+require('controller/Controller.php');
+require('model/Model.php');
+require('model/Movie.php');
+require('model/Database.php');
 
-$config = require('Controller/config.php');
+$config = require('config/config.php');
 $db = new Database($config);
 
 $controller = new Controller($db);

@@ -9,12 +9,14 @@ require('header.php');
             <th>Stars</th>
             <th>Director</th>
             <th>Year</th>
+            <th></th>
+            <th></th>
 
         </tr>
         <?php
 
         foreach ($this->getMovies() as $row) {
-            /* @var Movies $row */
+            /* @var Movie $row */
             ?>
             <tr>
                 <td><?= $row['title']; ?></td>

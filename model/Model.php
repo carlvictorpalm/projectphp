@@ -12,7 +12,7 @@ class Model
 
     }
 
-    public function getMovie()
+    public function getMovies()
     {
         $stm_getMovie = $this->db->prepare('SELECT * FROM `movies`');
         $stm_getMovie->execute();
@@ -27,7 +27,7 @@ class Model
         return $stm_deleteMovie;
     }
 
-    public function createMovie(Movies $movies)
+    public function createMovie(Movie $movies)
     {
         $stm_createMovie = $this->db->prepare('INSERT INTO `movies`(`title`, `stars`, `director`, `year`) VALUES (:title, :stars, :director, :year)');
         $success = $stm_createMovie->execute([':title' => $movies->getTitle(), ':stars' => $movies->getStars(), ':director' => $movies->getDirector(), ':year' => $movies->getYear()]);
@@ -37,7 +37,7 @@ class Model
         return $success;
     }
 
-    public function updateMovies(Movies $movies)
+    public function updateMovie(Movie $movies)
     {
         $update_stm = $this->db->prepare('UPDATE `movies` SET title = :title, stars = :stars, director = :director, year = :year WHERE id = :id');
         return $update_stm->execute([':id' => $movies->getId(), ':title' => $movies->getTitle(), ':stars' => $movies->getStars(),':director' => $movies->getDirector(), ':year' => $movies->getYear()]);
@@ -48,7 +48,7 @@ class Model
         $stm_editMovie = $this->db->prepare('SELECT * FROM `movies` WHERE `id` = :id');
         $stm_editMovie->execute([':id' => $id]);
         $stm_editMovie->setFetchMode(PDO::FETCH_ASSOC);
-        return new Movies($stm_editMovie->fetch());
+        return new Movie($stm_editMovie->fetch());
 
     }
 }

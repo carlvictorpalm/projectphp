@@ -13,13 +13,13 @@ class Controller
     {
         $page = filter_input(INPUT_GET, 'page', FILTER_SANITIZE_SPECIAL_CHARS);
         if (empty($page))
-            require('Views/start.php');
+            require('view/start.php');
         elseif ($page === "show") {
-            require('Views/viewMovies.php');
+            require('view/viewMovies.php');
         } elseif ($page === "create") {
 
             if (isset($_POST['save'])) {
-                $movies = new Movies();
+                $movies = new Movie();
                 $movies->setTitle($_POST['title']);
                 $movies->setStars($_POST['stars']);
                 $movies->setDirector($_POST['director']);
@@ -29,15 +29,15 @@ class Controller
                 exit();
             }
 
-            require('Views/create.php');
+            require('view/create.php');
         } elseif ($page === "update") {
             if (isset($_GET['id'])){
                 $id = $_GET['id'];
                 $movies = $this->getId($id);
-                require('Views/update.php');
+                require('view/update.php');
             }
             if (isset($_POST['update'])){
-                $movies = new Movies();
+                $movies = new Movie();
                 $movies->setId($_POST['id']);
                 $movies->setTitle($_POST['title']);
                 $movies->setStars($_POST['stars']);
@@ -55,18 +55,18 @@ class Controller
             exit();
 
         } else {
-            require('Views/start.php');
+            require('view/start.php');
         }
     }
 
     public function getMovies()
     {
-        return $this->model->getMovie();
+        return $this->model->getMovies();
     }
 
-    public function editMovie(Movies $movies)
+    public function editMovie(Movie $movies)
     {
-        return $this->model->updateMovies($movies);
+        return $this->model->updateMovie($movies);
     }
 
     public function deleteMovie($id)
@@ -74,7 +74,7 @@ class Controller
         return $this->model->deleteMovie($id);
     }
 
-    public function saveMovie(Movies $movies)
+    public function saveMovie(Movie $movies)
     {
         return $this->model->createMovie($movies);
     }
