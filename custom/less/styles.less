@@ -1,5 +1,14 @@
+@border: none;
+@background-color: dimgrey;
+@padding: 5px 5px;
+@border-radius: 12px;
+@padding-right: 30px;
+
+
+
 body {
   margin:0;
+  
 }
 
 .topnav {
@@ -50,34 +59,35 @@ body {
 
 }
 #update {
-  background-color: dimgray;
-  border: none;
+  background-color: @background-color;
+  border: @border;
+  padding: @padding;
+  border-radius: @border-radius;
   color: white;
-  padding: 5px 5px;
-  border-radius: 12px;
 
 }
 #save {
-  background-color: dimgray;
-  border: none;
+
   color: #f2f2f2;
-  padding: 5px 5px;
-  border-radius: 12px;
+  background-color: @background-color;
+  border: @border;
+  padding: @padding;
+  border-radius: @border-radius;
 
 }
 #edit {
-  background-color: dimgray;
-  border: none;
-  padding: 5px 5px;
-  border-radius: 12px;
+  background-color: @background-color;
+  border: @border;
+  padding: @padding;
+  border-radius: @border-radius;
 
 }
 
 #delete {
-  background-color: dimgray;
-  border: none;
-  padding: 5px 5px;
-  border-radius: 12px;
+  background-color: @background-color;
+  border: @border;
+  padding: @padding;
+  border-radius: @border-radius;
 
 }
 
@@ -88,13 +98,6 @@ body {
 
 footer {
   clear: both;
-}
-
-
-#update :hover {
-
-  color: green;
-  text-decoration: none;
 }
 
 #delete a:hover {
@@ -117,10 +120,10 @@ button :hover {
 }
 
 th {
-  padding-right: 30px;
+  padding-right: @padding-right;
 }
 td {
-  padding-right: 30px;
+  padding-right: @padding-right;
 }
 
 
